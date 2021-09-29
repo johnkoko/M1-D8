@@ -91,8 +91,8 @@
             const links = document.querySelectorAll("a");
             links.forEach((link) => {
             link.href = "https://www.google.com";
-        });
-      };
+            });
+      }; changeUrls()
   
         /* EXERCISE 5
          Write a function for adding a new list item in the second unordered list.
@@ -107,8 +107,10 @@
         */
   
         const addParagraph = function (content) {
-          //
+            const div = document.querySelectorAll("div")[0];
+            div.innerHTML += `<p>${content}</p>`;
         };
+        addParagraph("new paragraph");
   
         /* EXERCISE 7
          Write a function for making the first unordered list disappear.
